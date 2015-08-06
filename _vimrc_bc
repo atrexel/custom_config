@@ -1,0 +1,81 @@
+:set background=dark
+:let g:solarized_termtrans=1
+:colorscheme solarized
+
+:let python_highlight_all = 1
+:syntax on
+
+" Map page-down and page-up
+map - ^F
+map _ ^B
+
+" Tab command shortcuts
+map tc :tabnew<Space>
+map tf :tabfirst<CR>
+map tl :tablast<CR>
+map tm :tabm<Space>
+map td :tabclose<CR>
+
+" Tab between tabs
+map <tab> gt
+map <s-tab> gT
+
+" Use the hjkl keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+
+" And make them work, too.
+nnoremap j gj
+nnoremap k gk
+
+map ` <nop>
+
+autocmd BufRead,BufNewFile *.pgc :set filetype=c
+autocmd BufRead,BufNewFile *.jelly :set filetype=xml
+autocmd BufRead,BufNewFile *.tac :set filetype=python
+
+:set tabstop=4
+:set shiftwidth=4
+:set softtabstop=4
+:set expandtab
+
+:set number
+set ruler
+set cursorline
+
+set directory=~/.vim/swap//
+
+:set showmode
+:set showcmd
+:set wildmenu
+
+:set encoding=utf-8
+:set autoindent
+:set visualbell
+:set ttyfast
+
+set undofile
+set undodir=~/.vim/undo//
+
+:set laststatus=2
+:hi StatusLine ctermbg=Green ctermfg=Black
+
+set ignorecase
+set smartcase
+set incsearch
+set showmatch
+set hlsearch
+
+set wrap
+set textwidth=99
+set formatoptions=qrn1
+:set colorcolumn=80
+:hi ColorColumn ctermbg=Black ctermfg=Red guibg=gray14
+
+call pathogen#infect()
+
+map <F2> :mksession! ~/.vim_session <cr>
+map <F3> :source ~/.vim_session <cr>
+
