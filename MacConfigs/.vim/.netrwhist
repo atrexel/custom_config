@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/mtrexel/dev_workspace/qbot2/pysrc/qbot/proscan/static/bootstrap/js'
+let g:netrw_dirhist_2='/Users/mtrexel/dev_workspace/codeflow/pysrc/qbot/scan'
+let g:netrw_dirhist_3='/Users/mtrexel/dev_workspace/codeflow/pysrc/qbot/scan/static/bootstrap/css'
+let g:netrw_dirhist_4='/Users/mtrexel/dev_workspace/codeflow/pysrc/qbot/scan/static/bootstrap-mod-combobox'
+let g:netrw_dirhist_5='/Users/mtrexel/dev_workspace/omniscan-api/lib/omniscan/model'
